@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fan_ip: '192.168.1.1'
+  game: one
+
+two:
+  fan_ip: '192.168.1.2'
+  game: one
+
+three:
+  fan_ip: '192.168.1.1'
+  game: three
+
+four:
+  fan_ip: '192.168.1.2'
+  game: three

@@ -1,0 +1,44 @@
+<%= will_paginate @games %>
+<p id="notice"><%= notice %></p>
+
+<h1 id="games-view-title">Classic Video Games</h1>
+
+<table id="games-list">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Year</th>
+      <th>Publisher</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @games.each do |game| %>
+      <tr>
+        <td class="game-name" id="<%= "game-#{game.id}" %>"
+            onclick="game_listing_handlers.gameNameClicked(event)"
+            title="Click game name for details"
+        >
+          <%= game.name %>
+        </td>
+        <td><%= game.year %></td>
+        <td><%= game.manufacturer %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div id="game-detail" style="display:none">
+  <h2 class="game-detail-name">Game Detail</h2>
+  <div class="game-detail-image" style="display:none"></div>
+  <table>
+  <tr><td class="game-detail-liker" onclick="game_listing_handlers.likeGame(event)">Like</td>
+    <td class="game-detail-likes">Likes</td>
+  </tr>
+  <tr><td>Year</td><td class="game-detail-year"></td></tr>
+  <tr><td>Publisher</td><td class="game-detail-publisher"></td></tr>
+  <tr><td>Notes</td><td class="game-detail-notes"></td></tr>
+  <tr><td>Active</td><td class="game-detail-active"></td></tr>
+  </table>
+  <div class="game-detail-close" onclick="game_listing_handlers.closeGameDetail(event)"></div>
+</div>

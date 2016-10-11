@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Game1
+  year: 1970
+  manufacturer: ABC Co
+  notes: Notes for Game1
+  is_active: true
+  photo: one
+
+two:
+  name: Game2
+  year: 1980
+  manufacturer: DEF Co
+  notes: Notes for Game2
+  is_active: false
+
+three:
+  name: Game3
+  year: 1975
+  manufacturer: Wiz Products
+  notes: Notes for Game3
+  is_active: true

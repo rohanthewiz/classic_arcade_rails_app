@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+  <h3>The game <%= @game[:name] %> was liked!</h3>
+  <table>
+    <tr><td>Total likes</td><td><%= @game[:likes] %></td></tr>
+    <tr><td>Publisher</td><td><%= @game[:publisher] %></td></tr>
+    <tr><td>Year</td><td><%= @game[:year] %></td></tr>
+    <tr><td>Liked by</td><td><%= @game[:liked_by] %></td></tr>
+  </table>
+</body>
+</html>

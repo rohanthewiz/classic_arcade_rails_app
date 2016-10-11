@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: a/b/c/photo1.jpg
+  thumb: photo1.png
+
+two:
+  url: a/b/c/photo2.jpg
+  thumb: photo2.png
