@@ -15,3 +15,13 @@ Run the following commands from project root to setup the database. Substitute "
 
     RAILS_ENV=my_environment rake db:migrate:reset  # start fresh    
     RAILS_ENV=my_environment rake app:csv_import
+
+### Production Setup
+bundle
+RAILS_ENV=production rake db:migrate:reset
+RAILS_ENV=production rake app:csv_import
+rake assets:clobber # start fresh
+rake assets:precompile
+
+start the app in production with:
+ `sudo RAILS_ENV=production SECRET_KEY_BASE=mysecretkeyReplacewithyours RAILS_SERVE_STATIC_FILES=true rails s -b 0.0.0.0 -p 80`
