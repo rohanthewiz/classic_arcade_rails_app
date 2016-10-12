@@ -24,7 +24,7 @@ class LikesController < ApplicationController
             likes: game.likes.count,
             liked_by: request.ip
         }
-        LikeMailer.game_liked_email(game_data).deliver_later
+        #LikeMailer.game_liked_email(game_data).deliver_later
 
         format.html { redirect_to @like, notice: 'Like was successfully created.' }
         format.json {

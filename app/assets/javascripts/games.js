@@ -19,7 +19,7 @@ function gameListingHandlers() {
         gd.find('.game-detail-active').text(data.is_active ? "true" : "false");
         if (data.image) {
           var img_div = gd.find('.game-detail-image');
-          img_div.css('background-image', 'url(' + data.image + ')');
+          img_div.css('background-image', 'url(/images/games/thumbs/' + data.image + ')');
           img_div.show();
         }
         var window_height = $(window).height();

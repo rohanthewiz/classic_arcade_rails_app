@@ -2,5 +2,5 @@ json.extract! game, :id, :name, :year, :manufacturer, :notes, :is_active, :creat
 json.url game_url(game, format: :json)
 json.likes game.likes.length
 if game.photo
-  json.image "/assets/games/thumbs/#{game.photo.thumb}"
+  json.image asset_path("#{game.photo.thumb}")
 end
