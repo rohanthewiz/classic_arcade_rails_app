@@ -1,7 +1,8 @@
 # A Full Stack Ruby on Rails App Demonstration
 
 ### About
-This app is a sampling of classic video games. Clicking on the name of the game will popup a detail view with a like button and with possibly an image. You will be able to like the game by clicking the 'like' link.
+This app is a sampling of classic video games. Clicking on the name of the game will popup a detail view with a like button and possibly an image. You will be able to like the game by clicking the 'like' link.
+See the demo here: http://gonotes.net:8000
 
 ### Technical details
 The app creates a database (SQLite), imports game data into it, displays the data with jQuery and SASS, makes AJAX calls to populate the popup, and relays 'likes' back to the database making sure a user (actually IP) cannot like a game twice. There are unit and functional tests for all models and controllers.
