@@ -77,7 +77,10 @@ $games-page-left-offset: 6%;
     }
     &liker {
       cursor: pointer;
-      text-decoration: underline;
+      background: asset_data_url("thumbs_up.png") no-repeat 30% center;
+      //&:hover {
+      //  text-decoration: none;
+      //}
     }
   }
 }
