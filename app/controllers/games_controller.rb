@@ -5,7 +5,7 @@ class GamesController < ApplicationController
   # GET /games.json
   def index
     @games = Game.order('year DESC').where(is_active: true)
-                 .paginate(page: params[:page], per_page: 10)
+                 .paginate(page: params[:page], per_page: 16)
   end
 
   # GET /games/1

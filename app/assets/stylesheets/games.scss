@@ -3,14 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $games-page-left-offset: 6%;
 
+#games-list-wrapper {
+  max-width: 1200px;
+  width: 84%;
+  margin-left: 8%;
+}
+
 #games-view-title {
   margin-left: $games-page-left-offset;
   line-height: 22px;
 }
 
 #games-list {
+  font-size: 1.1rem;
   margin-left: $games-page-left-offset;
-  padding: 0.2em 0.4em;
+  padding: 0.2em;
   border-collapse: collapse;
   thead tr {
     background-color: burlywood;
@@ -19,9 +26,9 @@ $games-page-left-offset: 6%;
   }
   td, th {
     text-align: left;
-    padding-top: 0.1em;
-    padding-left: 0.2em;
-    padding-right: 1em;
+    padding-top: 0.4em;
+    padding-left: 0.3em;
+    padding-right: 1.1em;
   }
   .game-name {
     cursor: pointer;
@@ -29,6 +36,7 @@ $games-page-left-offset: 6%;
 }
 
 #game-detail {
+  font-size:1.1rem;
   position: absolute;
   height: auto;
   max-height: 700px;

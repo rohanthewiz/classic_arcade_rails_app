@@ -1,32 +1,37 @@
-<%= will_paginate @games %>
 <p id="notice"><%= notice %></p>
 
-<h1 id="games-view-title">Classic Video Games</h1>
+<div id="games-list-wrapper">
 
-<table id="games-list">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Year</th>
-      <th>Publisher</th>
-    </tr>
-  </thead>
+  <%= will_paginate @games %>
 
-  <tbody>
-    <% @games.each do |game| %>
+  <h1 id="games-view-title">Classic Video Games</h1>
+
+  <table id="games-list">
+    <thead>
       <tr>
-        <td class="game-name" id="<%= "game-#{game.id}" %>"
-            onclick="game_listing_handlers.gameNameClicked(event)"
-            title="Click game name for details"
-        >
-          <%= game.name %>
-        </td>
-        <td><%= game.year %></td>
-        <td><%= game.manufacturer %></td>
+        <th>Name</th>
+        <th>Year</th>
+        <th>Publisher</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @games.each do |game| %>
+        <tr>
+          <td class="game-name" id="<%= "game-#{game.id}" %>"
+              onclick="game_listing_handlers.gameNameClicked(event)"
+              title="Click game name for details"
+          >
+            <%= game.name %>
+          </td>
+          <td><%= game.year %></td>
+          <td><%= game.manufacturer %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>
 
 <div id="game-detail" style="display:none">
   <h2 class="game-detail-name">Game Detail</h2>
